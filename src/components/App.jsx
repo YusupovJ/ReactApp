@@ -1,5 +1,8 @@
 import React from "react";
-import "../styles/components/App.css";
+
+import Head from "./Head";
+import Main from "./Main";
+import Foot from "./Foot";
 
 export default class App extends React.Component {
 	constructor(props) {
@@ -7,6 +10,12 @@ export default class App extends React.Component {
 		this.state = {};
 	}
 	render() {
-		return null;
+		return (
+			<div className="wrapper">
+				<Head />
+				<Main />
+				<Foot />
+			</div>
+		);
 	}
 }

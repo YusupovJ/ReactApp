@@ -1,11 +1,14 @@
-// Библиотеки
+/* Библиотеки */
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// Стили
-import "./styles/style.css";
+/* Стили */
+import "./styles/style.scss";
 
-// Компоненты
+/* Шрифты */
+// import "./assets/fonts/fonts.css"; // Если есть файлом
+
+/* Компоненты */
 import App from "./components/App";
 
 /*------------------------------------*/
