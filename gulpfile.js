@@ -33,7 +33,7 @@ const ttf2woff = () => {
 };
 
 const fontsStyle = () => {
-	let fontsFile = `${path.assets}/fonts/fonts.scss`;
+	let fontsFile = `./src/styles/fonts.scss`;
 	fs.readdir(`${path.assets}/fonts/`, function (err, fontsFiles) {
 		if (fontsFiles) {
 			if (!fs.existsSync(fontsFile)) {
