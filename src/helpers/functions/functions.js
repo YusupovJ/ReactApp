@@ -1,7 +1,3 @@
-import { useEffect, useState, useRef } from "react";
-
-/*------------------------------------*/
-
 // Конвертация из px в rem em и %
 
 export function rem(num) {

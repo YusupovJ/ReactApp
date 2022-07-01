@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 // Медиа запросы
 
 export const useMediaQuery = (width = 768) => {
