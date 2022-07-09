@@ -42,12 +42,8 @@ const fontsStyle = () => {
 				for (let index = 0; index < fontsFiles.length; index++) {
 					let fontFileName = fontsFiles[index].split(".")[0];
 					if (newFileOnly !== fontFileName) {
-						let fontName = fontFileName.split("-")[0]
-							? fontFileName.split("-")[0]
-							: fontFileName;
-						let fontWeight = fontFileName.split("-")[1]
-							? fontFileName.split("-")[1]
-							: fontFileName;
+						let fontName = fontFileName.split("-")[0] ? fontFileName.split("-")[0] : fontFileName;
+						let fontWeight = fontFileName.split("-")[1] ? fontFileName.split("-")[1] : fontFileName;
 						if (fontWeight.toLowerCase() === "thin") {
 							fontWeight = 100;
 						} else if (fontWeight.toLowerCase() === "light") {
@@ -58,10 +54,7 @@ const fontsStyle = () => {
 							fontWeight = 600;
 						} else if (fontWeight.toLowerCase() === "bold") {
 							fontWeight = 700;
-						} else if (
-							fontWeight.toLowerCase() === "extrabold" ||
-							fontWeight.toLowerCase() === "heavy"
-						) {
+						} else if (fontWeight.toLowerCase() === "extrabold" || fontWeight.toLowerCase() === "heavy") {
 							fontWeight = 800;
 						} else if (fontWeight.toLowerCase() === "black") {
 							fontWeight = 900;
